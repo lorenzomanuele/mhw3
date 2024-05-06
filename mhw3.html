@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ticketone</title>
+        <link rel="stylesheet" href="mhw3.css">
+        <script defer src="mhw3.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="flex-container1">
+                <div id="flex-item1">Per info e modalità di rimborso <a class="white" href="https://www.ticketone.it/campaign/info-rimborsi">clicca qui</a></div>
+            </div>
+            <div class="flex-container2">
+                    <img id="logo" src="file_immagini\logo_ticketone.jpg">
+                    <div class="elenco">
+                        <span id="eventi">Eventi v</span>
+                    </div>
+                    <div class="elenco">
+                        <span id="localita">Località v</span>
+                    </div>
+                    
+                    <form>
+                        <input type='search' id='artist' class="artisti_eventi" placeholder="Ricerca artisti o eventi">
+                        <input type='submit' type="image" id='submit1' value="Cerca" src="file_immagini/lente_ingrandimento.png">
+                    </form>
+                    <img class="simboli" src="file_immagini\globo.png">
+                    <img class="simboli" src="file_immagini\profilo_utente.png">
+            </div>
+            <div id="copertina" class="hidden">
+                <div id="contenitore"></div>
+                <img id="crocetta" class="hidden" src="file_immagini1/crocetta.png">
+            </div>
+            <div id="flex-container3">
+                <div id="scomparsa1" class="hidden">
+                    <div class="tendina">
+                        <div class="elenco1">
+                            <span>Concerti</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Teatro</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Sport</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Mostre e Musei</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Altre manifestazioni</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Eventi internazionali</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Cinema</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Tutti gli eventi</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="scomparsa2" class="hidden">
+                    <div class="tendina">
+                        <div class="elenco1">
+                            <span>Ancona</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Bari</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Bergamo</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Bologna</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Caserta</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Catania</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Firenze</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Forlì</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Genova</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Lucca</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Milano</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Misano</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Monza</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Napoli</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Padova</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Palermo</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Parma</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Pescara</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Reggio Calabria</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Reggio Emilia</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Roma</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Torino</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Trento</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Trieste</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Udine</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Varese</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Venezia</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Verona</span>
+                        </div>
+                        <div class="stanghetta_elenco"></div>
+                        <div class="elenco1">
+                            <span>Tutte le località</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="container1" id="first-container1">
+                    <img class="item1" src="file_immagini\img1.jpg">
+                    <div class="item1">
+                        <img class="item2" src="file_immagini\img2.jpg">
+                        <img class="item2" src="file_immagini\img3.jpg">
+                    </div>
+                    <img class="item1" src="file_immagini\img6.jpg">
+                    <img class="item3" src="file_immagini\img7.jpg">
+                    <img class="item4" src="file_immagini\img8.jpg">
+                </div>
+                <div class="container1" id="second-container1">
+                    <img class="item1" src="file_immagini\img4.jpg">
+                    <img class="item1" src="file_immagini\img5.jpg">
+                    <img class="item1" src="file_immagini\img9.jpg">
+                    <img class="item1" src="file_immagini\img10.jpg">
+                    <img class="item4" src="file_immagini\img11.jpg">
+                </div>
+            </div>
+            <div class="flex-container2_elenco">
+                <div class="elenco">
+                    <a class="free" href="https://www.ticketone.it/events/concerti-55/">Concerti</a>
+                    <a class="free" href="https://www.ticketone.it/events/sport-56/">Sport</a>
+                    <a class="free" href="https://www.ticketone.it/events/teatro-58/">Teatro</a>
+                    <a class="free" href="https://www.ticketone.it/events/mostre-e-musei-57/">Mostre e musei</a>
+                    <a class="free" href="https://www.ticketone.it/campaign/newsletter/?affiliate=ITT">Newsletter</a>
+                    <a class="free" href="https://www.ticketone.it/campaign/sport">Sport.Ticketone.it</a>
+                    <a class="free" href="https://www.fansale.it/fansale/">fanSALE.it</a>
+                    <a class="free" href="https://magazine.ticketone.it/magazine/?utm_source=t1.website&utm_medium=referral&utm_campaign=t1.hp.bar">TicketOne Magazine</a>
+                    <a class="free" href="https://www.ticketone.it/campaign/gift-voucher-personalizzato/?affiliate=ITT">Gif</a>
+                </div>
+            </div>
+        </header>
+        <section id='copertina'>
+
+        </section>
+        <section>
+            <div id="flex-container4">
+<!-- Tutte le categorie -->
+                <div class="container2">
+                    <span class="categorie">Tutte le categorie</span>
+                    <span class="barra"></span>
+                </div>
+    <!-- Fila 1 -->
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img12.jpg">
+                        <span>Aggiorna il tuo profilo</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img13.jpg">
+                        <span>Nick Cave & The Bad Seeds<br></span>
+                        <span class="grigio">A breve in vendita<br></span>
+                        <span class="azzurro">Biglietti<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img14.jpg">
+                        <span>Nick Carter</span>
+                        <span class="grigio">A breve in vendita<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img15.jpg">
+                        <span>Vibras Milan - Marc Anthony + Gente de Zona</span>
+                        <span class="azzurro">Biglietti da € 80,50<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img16.jpg">
+                        <span>Ligabue</span>
+                        <span class="azzurro">Biglietti da € 79,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img17.jpg">
+                        <span>007 Skyfall in concert</span>
+                        <span class="azzurro">Biglietti da € 49,00<br></span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img18.jpg">
+                        <span>Dinosauri - Terra dei Giganti</span>
+                        <span class="azzurro">Biglietti da € 14,50<br></span>
+                    </div>
+                </div>
+    <!-- Fila 2 -->
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img19.jpg">
+                        <span>Helpcenter</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img20.jpg">
+                        <span>Nile Rodgers & CHIC<br></span>
+                        <span class="grigio">Nuova data<br></span>
+                        <span class="azzurro">Biglietti da € 46,00<br></span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img21.jpg">
+                        <span>Luke Hammings</span>
+                        <span class="azzurro">Biglietti da € 55,20<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img22.jpg">
+                        <span>Il Volo - TUTTI PER UNO</span>
+                        <span class="grigio">Nuove date<br></span>
+                        <span class="azzurro">Biglietti da € 39,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img23.jpg">
+                        <span>Metalitalia.com Festival 2024</span>
+                        <span class="azzurro">Biglietti da € 56,35<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img24.jpg">
+                        <span>Ricchi e Poveri</span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item5" src="file_immagini\img25.jpg">
+                        <span>Teenage Dream</span>
+                        <span class="grigio">Nuove date<br></span>
+                        <span class="azzurro">Biglietti da € 20,00<br></span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                </div>
+<!-- Buoni e gift card -->
+                <div class="container3">
+                    <img class="buoni-card" src="file_immagini\img26.jpg">
+                    <img class="buoni-card" src="file_immagini\img27.jpg">
+                    <img class="buoni-card" src="file_immagini\img28.jpg">
+                    <img class="buoni-card" src="file_immagini\img29.jpg">
+                </div>
+<!-- Voucher Coivd -->
+                <div class="container3">
+                    <img class="voucher-covid" data-info="Ottieni un rimborso subito!" src="file_immagini\img30.jpg">
+                    <img class="voucher-covid" src="file_immagini\img31.jpg">
+                </div>
+<!-- Teatri dell'Opera -->
+                <div class="container3">
+                    <img class="buoni-card" src="file_immagini\img32.jpg">
+                    <img class="buoni-card" src="file_immagini\img33.jpg">
+                    <img class="buoni-card" src="file_immagini\img34.jpg">
+                    <img class="buoni-card" src="file_immagini\img35.jpg">
+                </div>
+<!-- Concerti -->
+                <div class="container2">
+                    <span class="categorie">Concerti</span>
+                    <span class="barra"></span>
+                </div>
+
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img36.jpg">
+                        <span>Andre' Rieu</span>
+                        <span class="grigio">A breve in vendita<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img37.jpg">
+                        <span>Elio e le storie tese<br></span>
+                        <span class="grigio">Concertozzo<br></span>
+                        <span class="azzurro">Biglietti da € 34,50<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img38.jpg">
+                        <span>Blue - Italian Summer Tour 2024</span>
+                        <span class="grigio">Nuova data<br></span>
+                        <span class="azzurro">Biglietti da € 46,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img39.jpg">
+                        <span>40 Fingers</span>
+                        <span class="azzurro">Biglietti da € 26,45<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img40.jpg">
+                        <span>Voglio tornare negli anni 90</span>
+                        <span class="azzurro">Biglietti da € 13,00<br></span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img41.jpg">
+                        <span>New Model Army</span>
+                        <span class="azzurro">Biglietti da € 34,50<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img42.jpg">
+                        <span>Joe Barbieri</span>
+                    </div>
+                </div>
+<!-- Sport -->
+                <div class="container2">
+                    <span class="categorie">Sport</span>
+                    <span class="barra"></span>
+                </div>
+
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img43.jpg">
+                        <span>Suzuki Motor Fest</span>
+                        <span class="azzurro">Biglietti da € 8,00<br></span>
+                        <span class="arancione">Offerta combinata</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img44.png">
+                        <span>2024 Misano E-Prix<br></span>
+                        <span class="azzurro">Biglietti da € 30,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                        <span class="arancione">Offerta combinata</span>
+                        <div class="FanTicket-container">
+                            <img class="FanTicket-img" src="file_immagini\ticket.png">
+                            <span class="FanTicket-span">  <span class="grigio">  con FanTicket</span></span>
+                        </div>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img45.jpg">
+                        <span>Monza Circuit Experience 2024</span>
+                        <span class="azzurro">Biglietti da € 25,00<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img46.jpg">
+                        <span>FIM Superbike World Championship 2024 - ACERBIS ITALIAN ROUND</span>
+                        <span class="grigio">Cremona CIrcuit<br></span>
+                        <span class="azzurro">Biglietti da € 40,00<br></span>
+                        <span class="arancione">Offerta combinata</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img47.jpg">
+                        <span>Benetton Rugby Treviso</span>
+                        <span class="grigio">Rugby<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img48.png">
+                        <span>Palavela on Ice</span>
+                        <span class="grigio">Torino<br></span>
+                        <span class="azzurro">Biglietti da € 8,50<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img49.jpg">
+                        <span>WEC</span>
+                        <span class="grigio">6 Hours of Imola 2024<br></span>
+                        <span class="arancione">Offerta combinata</span>
+                    </div>
+                </div>
+<!-- Ticket alert -->
+                <div class="container2">
+                    <img id="ticket-alert" src="file_immagini\ticket-alert.png">
+                    <span class="categorie">Ticket Alert</span>
+                    <span class="barra"></span>
+                </div>
+
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img50.jpg">
+                        <span>Bugo</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img51.jpg">
+                        <span>Maluma</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img52.jpg">
+                        <span>Stereophonics</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img53.jpg">
+                        <span>Hooverphonic</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img54.jpg">
+                        <span>Enrique Iglesias</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img55.jpg">
+                        <span>Gorillaz</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img56.jpg">
+                        <span>Moby</span>
+                        <span class="grigio">Iscriviti subito!<br></span>
+                        <span class="azzurro">Ticket alert<br></span>
+                    </div>
+                </div>
+<!-- Newsletter TicketOne -->
+                <div class="container11">
+                    <img id="imgcont11" src="file_immagini\megafono.png">
+                    <div class="subcontainer11">
+                        <span class="bold">Newsletter TicketOne</span>
+                        <span class="carattere">Con il Servizio di Newsletter rimani aggiornato sui principali eventi in programma.</span>
+                        <strong class="carattere">Iscriviti subito per non perdere i tuoi eventi preferiti!</strong>
+                        <div id="container12">
+                            <div class="ricerca1">
+                                <input class="artisti_eventi" type="search" placeholder="Il tuo indirizzo email">
+                            </div>
+                            <div class="ricerca_eventi">
+                                <span class="word_ricerca_eventi">Iscriviti alla Newsletter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Mostre e Musei -->
+                <div class="container2">
+                    <span class="categorie">Mostre e Musei</span>
+                    <span class="barra"></span>
+                </div>
+
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img57.jpg">
+                        <span>Space Dreamers</span>
+                        <span class="azzurro">Biglietti da € 15,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img58.jpg">
+                        <span>Cézanne / Renoir<br></span>
+                        <span class="grigio">Capolavori dal Musée de l'Orangerie<br></span>
+                        <span class="azzurro">Biglietti da € 17,00<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img59.jpg">
+                        <span>Dal Cuore alle Mani, Dolce & Gabbana</span>
+                        <span class="azzurro">Biglietti da € 17,00<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img60.jpg">
+                        <span>Picasso. La metamorfosi della figura</span>
+                        <span class="grigio">Milano, MUDEC<br></span>
+                        <span class="azzurro">Biglietti da € 18,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img61.jpg">
+                        <span>Preraffaelliti. Rinascimento moderno</span>
+                        <span class="azzurro">Biglietti da € 15,00<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img62.jpg">
+                        <span>Monet e gli Impressionisti - Digital Experience</span>
+                        <span class="grigio">Milano<br></span>
+                        <span class="azzurro">Biglietti da € 15,70<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img63.jpg">
+                        <span>Escher</span>
+                        <span class="grigio">Roma<br></span>
+                        <span class="azzurro">Biglietti da € 17,50<br></span>
+                    </div>
+                </div>
+<!-- Teatro -->
+                <div class="container2">
+                    <span class="categorie">Teatro</span>
+                    <span class="barra"></span>
+                </div>
+
+                <div class="container3">
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img64.jpg">
+                        <span>Piccole Donne</span>
+                        <span class="azzurro">Biglietti da € 28,00<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img65.jpg">
+                        <span>Fiori d'acciaio</span>
+                        <span class="azzurro">Biglietti da € 28,00<br></span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img66.jpg">
+                        <span>Randy Feltface</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img67.jpg">
+                        <span>Max Angioni</span>
+                        <span class="grigio">Nuova data<br></span>
+                        <span class="azzurro">Biglietti da € 18,50<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img68.jpg">
+                        <span>Maurizio Battista - MB Show - Il Gran Varieta'</span>
+                        <span class="azzurro">Biglietti da € 32,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img69.jpg">
+                        <span>Beppe Grillo</span>
+                        <span class="grigio">Io sono un altro<br></span>
+                        <span class="azzurro">Biglietti da € 23,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="elemento">
+                        <img class="item6" src="file_immagini\img70.jpg">
+                        <span>Francesco Chicchella</span>
+                        <span class="azzurro">Biglietti da € 25,00<br></span>
+                        <span>⭐⭐⭐⭐⭐</span>
+                    </div>
+                </div>
+<!-- Informazioni e collegamenti -->
+                <div class="container3">
+                    <img class="buoni-card" src="file_immagini1\img71.jpg">
+                    <img class="buoni-card" src="file_immagini1\img72.jpg">
+                    <img class="buoni-card" src="file_immagini1\img73.jpg">
+                    <img class="buoni-card" src="file_immagini1\img74.jpg">
+                </div>
+<!-- Top 10 -->
+                <div class="container2">
+                    <span class="categorie">TOP 10 TicketOne.it</span>
+                    <span class="barra"></span>
+                </div>
+
+                <div class="container4">
+                    <div class="container5">
+                        <div id="little-container1">
+                            <span class="numero">01</span>
+                            <span class="nome">Ligabue<br>Biglietti da € 79,00</span>
+                        </div>
+                        <div id="little-container2">
+                            <span class="numero">02</span>
+                            <span class="nome">CCCP<br>Biglietti da € 39,10</span>
+                        </div>
+                        <div id="little-container3">
+                            <span class="numero">03</span>
+                            <span class="nome">Francesco de Gregori<br>Biglietti da € 34,50</span>
+                        </div>
+                        <div id="little-container4">
+                            <span class="numero">04</span>
+                            <span class="nome">Marco Mengoni<br>Biglietti da € 48,30</span>
+                        </div>
+                        <div id="little-container5">
+                            <span class="numero">05</span>
+                            <span class="nome">Antonello Venditti<br>Biglietti da € 39,10</span>
+                        </div>
+                    </div>
+
+                    <div class="container5">
+                        <div id="little-container6">
+                            <span class="numero">06</span>
+                            <span class="nome">Claudio Baglioni<br>Biglietti da € 59,00</span>
+                        </div>
+                        <div id="little-container7">
+                            <span class="numero">07</span>
+                            <span class="nome">Libri Come</span>
+                        </div>
+                        <div id="little-container8">
+                            <span class="numero">08</span>
+                            <span class="nome">Max Pezzali<br>Biglietti da € 40,25</span>
+                        </div>
+                        <div id="little-container9">
+                            <span class="numero">09</span>
+                            <span class="nome">Cigarettes After Sex</span>
+                        </div>
+                        <div id="little-container10">
+                            <span class="numero">10</span>
+                            <span class="nome">Irama<br>Biglietti da € 40,20</span>
+                        </div>
+                    </div>
+
+                    <img id="img_numeroverde" src="file_immagini\numero-verde.jpg">
+                </div>
+<!-- Altri servizi -->
+                <div class="container3">
+                    <img class="buoni-card" src="file_immagini1\img75.jpg">
+                    <img class="buoni-card" src="file_immagini1\img76.jpg">
+                    <img class="buoni-card" src="file_immagini1\img77.jpg">
+                    <img class="buoni-card" src="file_immagini1\img78.jpg">
+                </div>
+<!-- Ricerca prossimi eventi -->
+                <div class="container7">
+                    <span class="bold">Niente in programma?</span>
+                    <span class="carattere">Stai cercando qualcosa da fare per i prossimi giorni? Basta un click per trovare tutti gli eventi in programma nelle vicinanze!</span>
+                    <div id="container8">
+                        <div class="ricerca">
+                            <span class="artisti_eventi">Città</span>
+                            <img class="freccetta" src="file_immagini1\freccia.png">
+                        </div>
+                        <div class="ricerca">
+                            <span class="artisti_eventi">Categoria</span>
+                            <img class="freccetta" src="file_immagini1\freccia.png">
+                        </div>
+                        <div class="ricerca_eventi">
+                            <span class="word_ricerca_eventi">Ricerca eventi</span>
+                        </div>
+                    </div>
+                </div>
+<!-- Valutazioni e collegamenti esterni-->
+                <div id="container9">
+                    <img class="sigillo" src="file_immagini1\img79.jpg">
+                    <img class="sigillo" src="file_immagini1\img80.jpg">
+                    <img class="sigillo" src="file_immagini1\img81.jpg">
+                    <img class="sigillo" src="file_immagini1\img82.jpg">
+                    <img class="sigillo" src="file_immagini1\img83.jpg">
+                </div>
+<!-- Ticket Alert -->
+                <div class="container11">
+                    <img id="imgcont11" src="file_immagini\big_ticket_alert.png">
+                    <div class="subcontainer11">
+                        <span class="bold">Ticket Alert</span>
+                        <span class="carattere">Iscriviti al servizio per essere informato tramite e-mail
+                        sui principali appuntamenti degli artisti/eventi desiderati.</span>
+                        <strong class="carattere">Potrai disattivare il servizio in qualsiasi momento!</strong>
+                        <form class="ricerca" id="barradiricerca">
+                            <input type="search" class="artisti_eventi" placeholder= "Cerca un artista o un evento">
+                            <input type='submit' id='submit2' value='Cerca'>
+                        </form>
+                    </div>
+           <!--     <div id="contenitore2" class="hidden">
+                        <div id="artist-view">
+                            <div id="contenitore"></div>
+                            <img id="crocetta2" class="hidden" src="file_immagini1/crocetta.png">
+                        </div>
+                    </div>
+            -->
+                </div>
+<!-- Intestazione finale -->
+                <div id="container10">
+                    <span id="final_title">TicketOne | Biglietti per Concerti, Spettacolo, Sport & Cultura</span>
+                    <p id="final_paragraph">
+                        ##TicketOne.it è il sito di biglietteria, marketing, informazione e commercio 
+                        elettronico <strong>leader in Italia</strong> per eventi di <strong>musica</strong>,
+                        <strong>spettacolo</strong>, <strong>sport</strong> e <strong>cultura</strong>.<br/>
+                        Ci impegniamo a offrirti il più ampio catalogo di eventi e il miglior servizio con informazioni sempre
+                        aggiornate, newsletter dedicate e tante promozioni. Puoi scegliere tra migliaia di eventi, che si
+                        tratti di biglietti per un <strong>musical</strong>, un <strong>concerto</strong>,
+                        uno <strong>spettacolo teatrale</strong>, una <strong>mostra</strong>,
+                        un <strong>evento sportivo</strong> o un <strong>festival pop</strong>, li troverai tutti qui,
+                        sul sito TicketOne.it.
+                    </p>
+                </div>
+                <div id="tornasu">
+                    <img id="tornasu" src="file_immagini\freccia_su.png">
+                    <a href="#">Torna su</a>
+                </div>
+            </div>
+        </section>
+        <div id="contenitore2" class="hidden">
+            <div id="artist-view">
+                
+            </div>
+        </div>
+        <footer>
+<!-- Link e servizi -->
+            <div class="flex-container5">
+                <div class="item-paragraph">
+                    <span class="title">TicketOne<br/></span>
+                    <a class="azzurro" href="https://www.ticketone.it/help/terms/">Termini e condizioni d'acquisto</a>
+                    <a class="azzurro" href="https://www.ticketone.it/help/data-protection/">Privacy</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/cookie-policy/">Informativa Cookie</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/conciliazione-paritetica/">ADR/ODR - Conciliazione paritetica</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/contatti/">Contatti Business</a>
+                    <a class="azzurro" href="https://www.ticketone.it/#cmpbox">Impostazioni Cookie</a>
+                </div>
+                <div class="item-paragraph">
+                    <span class="title">La Società</span>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/chisiamo/">Chi siamo</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/international/">Eventim Interational</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/job/">Lavora con noi</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/comunicati-stampa/">Comunicati Stampa</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/codice-etico/">Compliance</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/diversamente-abili/">Persone con disabilità</a>
+                </div>
+                <div class="item-paragraph">
+                    <span class="title">Help e contatti</span>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/contatti-consumatori/">Contatti Consumatori</a>
+                    <a class="azzurro" href="https://www.ticketone.it/helpcenter/">Helpcenter (FAQ)</a>
+                    <a class="azzurro" href="https://www.ticketone.it/help/outlets/">Cerca Punti Vendita</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/info-rimborsi/">Annulla e Posticipi</a>
+                    <a class="azzurro" href="https://www.ticketone.it/helpcenter/?faq=404">Polizza <em>Biglietto Sicuro</em></a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/metodi-pagamento/">Modalità di pagamento</a>
+                </div>
+                <div class="item-paragraph">
+                    <span class="title">Servizi</span>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/newsletter/">Newsletter</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/gift-voucher-personalizzato/">Gift Voucher</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/cambio-nominativo/">Cambio nominativo</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/rivendita/">Rivendita</a>
+                    <a class="azzurro" href="https://magazine.ticketone.it/magazine?utm_source=t1.website&utm_medium=referral&utm_campaign=t1.footer">TicketOne Magazine</em></a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/apps-specials/">Apps & Specials</a>
+                </div>
+                <div class="item-paragraph">
+                    <span class="title">B2B</span>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/partner/">On line Partners</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/logo/">Logo TicketOne.it</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/logo892101/">Logo Call Center 892.101</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/diventa-punto-vendita/">Diventa Punto Vendita</em></a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/groupbooking/">Servizi Business & Gruppi</a>
+                    <a class="azzurro" href="https://www.ticketone.it/campaign/advertising/">Advertising</a>
+                </div>
+                <div class="item-paragraph">
+                    <span class="title">Sport.Ticketone.it</span>
+                    <a class="azzurro" href="https://www.ticketone.it/helpcenter/">Domande frequenti (FAQ)</a>
+                    <a class="azzurro" href="https://sport.ticketone.it/post-order">Servizi post vendita</a>
+                </div>
+            </div>
+            <div class="stanghetta"></div>
+            <div class="flex-container5">
+                <div class="item-paragraph3">
+                    <span class="title">Seguici su...<br/></span>
+                    <div class="item-paragraph2">
+                        <img class="icone" src="file_immagini1\facebook_icon.png">
+                        <img class="icone" src="file_immagini1\instagram_icon.png">
+                        <img class="icone" src="file_immagini1\tiktok_icon.png">
+                        <img class="icone" src="file_immagini1\twitter_icon.png">
+                        <img class="icone" src="file_immagini1\linkedin_icon.png">
+                        <img class="icone" src="file_immagini1\youtube_icon.png">
+                    </div>
+                </div>
+                <div class="item-paragraph3">
+                    <span class="title">Download App<br/></span>
+                    <div class="item-paragraph2">
+                        <img class="icone_stores" src="file_immagini\appstore.png">
+                        <img class="icone_stores" src="file_immagini\googleplay.png">
+                    </div>
+                </div>
+                <div class="item-paragraph3">
+                    <span class="title">Call Center TicketOne 892.101<br/></span>
+                    <img id="icona_numeroverde" src="file_immagini\numeroverde_icon.png">
+                    <span id="text_paragraph2">Il costo massimo da rete fissa è di € 1/Min (I.V.A. esclusa senza
+                        scatto alla risposta). Per scoprire tutti i costi e i dettagli del servizio
+                        <span class="azzurro">clicca qui.<br/></span>Lunedì - Venerdì: ore 8-21 Sabato ore 9-17,30
+                        Domenica chiuso
+                    </span>
+                </div>
+            </div>
+            <div id="flex-container6">
+                <img id="small_logo" src="file_immagini/logo_small.png">
+                <div id="container13">
+                    <a class="elenco" href="https://www.ticketone.it/dashboard/">Accedi  |</a>
+                    <img id="italian_flag" src="file_immagini\bandiera_italia.png">
+                    <span class="elenco">IT</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
